@@ -1,0 +1,26 @@
+data_file: base_modelo.csv
+
+id_var: id
+ym_var: safra
+target_var: y
+
+oos_frac: 0.2
+seed: 1989
+
+# Safras de desenvolvimento (treino/validação + out-of-sample)
+dev_yms:
+  - 201401
+  - 201402
+  - 201403
+  - 201404
+  - 201405
+  - 201406
+  - 201407
+  - 201408
+  - 201409
+
+# Safras de teste out-of-time
+test_yms:
+  - 201410
+  - 201411
+  - 201412
